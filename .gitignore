@@ -161,5 +161,22 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# But do not ignore .dvc files inside the data directory
+!data/*.dvc
+!data/train.dvc
+!data/val.dvc
+!data/test.dvc
 
-/data
+# If you want to version-control dataset.yaml as well
+!data/dataset.yaml.dvc
+
+# Ignore everything in the data directory
+data/*
+
+# But do not ignore .dvc files in the data directory
+!data/*.dvc
+
+# Also, do not ignore specific files like dataset.yaml
+!data/dataset.yaml
+
+!data/raw_data.dvc
