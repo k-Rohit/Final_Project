@@ -1,8 +1,7 @@
 import os
 
 def create_folder_structure():
-    # Define the base project structure
-    project_root = "."  # Root folder of your project
+    project_root = "." 
 
     # Folders to create
     folders = [
@@ -42,13 +41,11 @@ def create_folder_structure():
         "notebooks/exploration.ipynb": "# Exploratory Data Analysis Jupyter Notebook\n"
     }
 
-    # Create folders
     for folder in folders:
         folder_path = os.path.join(project_root, folder)
         os.makedirs(folder_path, exist_ok=True)
         print(f"Created folder: {folder_path}")
 
-    # Create files with placeholder content
     for file, content in files.items():
         file_path = os.path.join(project_root, file)
         if not os.path.exists(file_path):  # Only create if file doesn't already exist
