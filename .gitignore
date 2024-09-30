@@ -180,3 +180,5 @@ data/*
 !data/dataset.yaml
 
 !data/raw_data.dvc
+
+.dvc/*
