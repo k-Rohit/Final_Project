@@ -3,6 +3,13 @@ import subprocess
 from ultralytics import YOLO
 import mlflow
 import mlflow.pyfunc
+from ultralytics import settings
+
+# Update a setting
+settings.update({"mlflow": True})
+
+# Reset settings to default values
+settings.reset()
 
 # Step 1: Initialize MLflow Run
 mlflow.start_run()
@@ -40,10 +47,10 @@ mlflow.log_param("batch", 8)
 
 # Step 7: Log metrics (example metrics; actual metric access may differ)
 # Replace 'metrics' with actual access code for your results
-mlflow.log_metric("train_loss", results.metrics.get('train_loss', 0))
-mlflow.log_metric("val_loss", results.metrics.get('val_loss', 0))
-mlflow.log_metric("mAP_50", results.metrics.get('mAP_50', 0))
-mlflow.log_metric("mAP_95", results.metrics.get('mAP_50-95', 0))
+mlflow.log_metric("train_loss", trainer.metrics.get('train_loss', 0))
+mlflow.log_metric("val_loss", trainer.metrics.get('val_loss', 0))
+mlflow.log_metric("mAP_50", trainer.metrics.get('mAP_50', 0))
+mlflow.log_metric("mAP_95", trainer.metrics.get('mAP_50-95', 0))
 
 # Step 8: Save the trained model
 model.save(trained_model_path)
