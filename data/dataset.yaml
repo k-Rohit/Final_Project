@@ -1,0 +1,10 @@
+path: /Users/kumarrohit/Desktop/MLOPS_LAB/Final_Project/data # dataset root dir
+train: /Users/kumarrohit/Desktop/MLOPS_LAB/Final_Project/data/train # train images (relative to 'path') 4 images
+val: /Users/kumarrohit/Desktop/MLOPS_LAB/Final_Project/data/val
+test : /Users/kumarrohit/Desktop/MLOPS_LAB/Final_Project/data/test
+
+names:
+    0: Aircraft
+    1: Helicopter
+    2: Ship
+    3: Drone
