@@ -3,4 +3,4 @@
 ['remote "azure_remote"']
     url = azure://final-year-data
     account_name = kumarrohitstorage
-    connection_string = DefaultEndpointsProtocol=https;AccountName=kumarrohitstorage;AccountKey=abc123;EndpointSuffix=core.windows.net
+    connection_string = "DefaultEndpointsProtocol=https;AccountName=kumarrohitstorage;AccountKey=7+JQ3rDkI79k76qd3Y1ZX2ClRYGwtsNtuHTJuPdwFhi4TyWMQ1PMro0yCd8+QP8r5+jIdzqaL/Iv+AStjonquQ==;EndpointSuffix=core.windows.net"
