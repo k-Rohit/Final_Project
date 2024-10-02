@@ -1,0 +1,6 @@
+[core]
+    remote = azure_remote
+['remote "azure_remote"']
+    url = azure://final-year-data
+    account_name = kumarrohitstorage
+    connection_string = DefaultEndpointsProtocol=https;AccountName=kumarrohitstorage;AccountKey=abc123;EndpointSuffix=core.windows.net
